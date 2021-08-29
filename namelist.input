@@ -1,22 +1,22 @@
  &time_control
- run_days                            = 0,
- run_hours                           = 24,
+ run_days                            = 30,
+ run_hours                           = 0,
  run_minutes                         = 0,
  run_seconds                         = 0,
  start_year                          = 2005, 2019,
- start_month                         = 01,   09, 
+ start_month                         = 11,   09, 
  start_day                           = 01,   04,
  start_hour                          = 00,   12,
  end_year                            = 2005, 2019,
- end_month                           = 01,   09,
- end_day                             = 02,   06,
+ end_month                           = 11,   09,
+ end_day                             = 30,   06,
  end_hour                            = 00,   00,
  interval_seconds                    = 21600
  input_from_file                     = .true.,.true.,
- history_interval                    = 60,  60,
- frames_per_outfile                  = 1, 1,
+ history_interval                    = 180,  60,
+ frames_per_outfile                  = 8, 1,
  restart                             = .false.,
- restart_interval                    = 1440,
+ restart_interval                    = 7200,
  io_form_history                     = 2
  io_form_restart                     = 2
  io_form_input                       = 2
@@ -24,7 +24,7 @@
  /
 
  &domains
- time_step                           = 90,
+ time_step                           = 135,
  time_step_fract_num                 = 0,
  time_step_fract_den                 = 1,
  max_dom                             = 1,
